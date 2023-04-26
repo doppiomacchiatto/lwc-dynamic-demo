@@ -8,8 +8,8 @@ node{
     def SF_USERNAME=env.SF_USERNAME
     def SERVER_KEY_CREDENTIALS_ID=env.SERVER_KEY_CREDENTIALS_ID
     def JWT_KEY=env.JWT_KEY
-    def TEST_LEVEL='ETA_App'
-    def PACKAGE_NAME='ETA-Demo'
+    def TEST_LEVEL='ET_App'
+    def PACKAGE_NAME='ET Demo'
     def PACKAGE_VERSION='1.0.0'
     def ORG_ALIAS='dev4'
     def LOG_LEVEL='fatal'
@@ -26,7 +26,7 @@ node{
         branches: [[name: '*/main']], 
         userRemoteConfigs: 
             [[credentialsId: "${SERVER_KEY_CREDENTIALS_ID}", 
-            url: 'https://gitlab.com/eq-dev-crew/eta-dynamic-demo.git']]])
+            url: 'https://gitlab.com/jsantisi/et-dynamic-demo.git']]])
 
     }
     withEnv(["HOME=${env.WORKSPACE}"]) {
