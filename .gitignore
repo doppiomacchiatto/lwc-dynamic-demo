@@ -2,7 +2,8 @@
 .cci
 /src.orig
 /src
-
+.sf/
+.sfdx/
 # Python
 *.pyc
 __pycache__
