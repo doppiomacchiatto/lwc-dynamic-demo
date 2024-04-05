@@ -1,5 +1,10 @@
 {
   "orgName": "jsantisi company",
   "edition": "Developer",
-  "features": []
+  "features": [SalesCloud, ServiceCloud, Communities ],
+  "settings": {
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
+      }
+	}
 }

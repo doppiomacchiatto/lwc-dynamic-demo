@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.84.3'
+project:
+    name: lwc-dynamic-demo
+    package:
+        name: lwc-dynamic-demo
+        api_version: '59.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/lwc-dynamic-demo/tests
+            options:
+                outputdir: robot/lwc-dynamic-demo/results
+
+    robot_testdoc:
+        options:
+            path: robot/lwc-dynamic-demo/tests
+            output: robot/lwc-dynamic-demo/doc/lwc-dynamic-demo_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
