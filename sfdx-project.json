@@ -6,7 +6,10 @@
     }
   ],
   "name": "lwc-dynamic-tabs",
-  "namespace": "",
+  "namespace": "lldd",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "55.0"
+  "sourceApiVersion": "59.0",
+  "packageAliases" :{
+    "lwc-dynamic-demo": "0HoHs000000CasGKAS"
+  }
 }
