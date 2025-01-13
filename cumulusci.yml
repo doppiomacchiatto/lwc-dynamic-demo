@@ -3,7 +3,7 @@ project:
     name: lwc-dynamic-demo
     package:
         name: lwc-dynamic-demo
-        api_version: '59.0'
+        api_version: '61.0'
     git:
     source_format: sfdx
 
