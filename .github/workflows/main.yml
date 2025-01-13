@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: jsantisi/sf-cli
+      
     steps:
       # Checkout the source code
       - name: "Checkout source code"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Process Connected App File
       - name: "Decrypt the org def json file."
