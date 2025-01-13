@@ -1,0 +1,31 @@
+# Unique name for this workflow
+name: Deploy LWC Application
+
+# Workflow starts when receiving custom event sent by CI workflow
+on: [push, pull_request]
+
+# Jobs to be executed
+jobs:
+  deploy-and-test:
+    runs-on: jsantisi/sf-cli
+
+    steps:
+
+      # Checkout the source code
+      - name: "Checkout source code"
+        uses: actions/checkout@v2
+
+      # Process Connected App File
+      - name: "Decrypt the org def json file."
+        id: ver
+        shell: bash
+        run: openssl version >> $GITHUB_OUTPUT
+
+      # Authenticate dev hub or Org
+
+      # Push source to scratch org
+
+      # Run Apex tests
+      
+      # Housekeeping
+      - name: "Delete scratch org"
