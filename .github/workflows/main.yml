@@ -28,4 +28,3 @@ jobs:
       # Run Apex tests
       
       # Housekeeping
-      - name: "Delete scratch org"
