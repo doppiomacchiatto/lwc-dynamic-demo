@@ -7,10 +7,10 @@ on: [push, pull_request]
 # Jobs to be executed
 jobs:
   deploy-and-test:
-    runs-on: jsantisi/sf-cli
-
+    runs-on: ubuntu-latest
+    container:
+      image: jsantisi/sf-cli
     steps:
-
       # Checkout the source code
       - name: "Checkout source code"
         uses: actions/checkout@v2
