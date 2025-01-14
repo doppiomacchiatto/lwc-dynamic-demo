@@ -9,7 +9,8 @@ jobs:
   deploy-and-test:
     runs-on: ubuntu-latest
     container:
-      image: salesforce/cli:2.73.6-slim
+      image: jsantisi/sf-cli
+      # salesforce/cli:2.73.6-slim
       
     steps:
       - uses: actions/checkout@v4
